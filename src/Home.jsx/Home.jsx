@@ -9,17 +9,17 @@ const Home = ({color ,setColor}) => {
   }
   return (
     <div>
-        <h1 className='text-app text-center py-5'>Hi, I'm Ziad Ahmed</h1>
-        <div className={`parent-home  ${color[0]==="bg-white1"?"bg-white2  borderblack":color[0]===undefined?" bg-white2 borderblack":""+" borderwhite "}  `}>
-        <nav className={`navbar  p-0 navbar-expand-lg ${color[0]===undefined?" bg-white1 ":color[0]}   `}>
+        <h1 className='text-app text-center py-5'>I'm Ziad Ahmed</h1>
+        <div className={`parent-home  ${color[0]==="bg-white1"?"bg-white2  borderblack":color[0]===undefined?" bg-white2 borderblack ":""+" borderwhite "}  `}>
+        <nav className={`navbar  p-0 navbar-expand-lg ${color[0]==="bg-white1"?"bg-white2   borderblack-bottom":color[0]+" borderwhite-bottom "}   `}>
   <div className={`container-fluid`}>
        <div>
        <span className="spanColor bg-danger"></span>
         <span className="spanColor bg-warning"></span>
         <span className="spanColor bg-info"></span>
        </div>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
+    <button className={`navbar-toggler ${color[0]?color[3]==="bg-white4"?" bg-transparent":color[3]:""}`} type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon "></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -42,14 +42,14 @@ const Home = ({color ,setColor}) => {
 
         <div className={`container-fliud ${color[1]}`}>
             <div className="home-me row py-5">
-                <div className="col-md-6 text-center">
+                <div className="Personalize col-md-6 text-center">
                     <h4>Personalize Theme</h4>
                     <span onClick={()=> Colors(["bg-black","bg-black1","bg-black2","bg-black3"])} className="spanColor1 bg-black"></span>
                     <span onClick={()=> Colors(["bg-white1","bg-white2","bg-white3","bg-white4"])} className="spanColor1 bg-white"></span>
                     <span onClick={()=> Colors(["bg-grey","bg-grey1","bg-grey2","bg-grey3"])} className="spanColor1 bg-grey"></span>
                     <span onClick={()=> Colors(["bg-pampa","bg-pampa1","bg-pampa2","bg-pampa3"])} className="spanColor1 bg-pampa"></span>
                     
-                    <p>*Theme settings will be saved foryour next visit</p>
+                    <p className='theme'>*Theme settings will be saved foryour next visit</p>
 
                 </div>
                 <div className="col-md-6  ">

@@ -14,7 +14,7 @@ const About = ({color}) => {
               I mainly work on Web Development with React JS & Node.js, with good knowledge of other JS frameworks such as Angular, and Next.js, with an interest in other programming languages ex: Java and more.<br/>
               If you want to know more about me and my work, please check my CV.<br/>
               </p>
-              <button className={`btn1  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Download My CV</button>
+              <button className={`btn1  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Download CV</button>
               <button className={`btn1 ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]}`}> <a className="text-white" href='mailto:za693387@gmail.com'>Mail Me</a></button>
               <hr className='hr'/>
               <h3 className='para my-3 fw-bold'>CORE PROFICIENCIES</h3>
@@ -43,7 +43,7 @@ const About = ({color}) => {
           <div className="col-md-6 text-center">
             <div>
               <img src={img} className='img w-100'/>
-              <h1 className='py-4'> Find me on Github & Linkedin</h1>
+              <h1 className='text-mobile py-4'> Find me on Github & Linkedin</h1>
               <div className='py-3'>
               <a target='_blank' href='https://github.com/ZiadAhmed92?tab=repositories'> GitHub: @imdevziadahmed</a><br/>
               <a target='_blank' href='https://www.linkedin.com/in/ziad-ahmed-5b1328265'> Linkedin: @imdevziadahmed</a>

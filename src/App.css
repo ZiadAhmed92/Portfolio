@@ -117,8 +117,14 @@ Home component
 .borderwhite{
     border: 1px solid white !important;
 }
+.borderwhite-bottom{
+    border-bottom: 1px solid white !important;
+}
 .borderblack{
     border: 1px solid black !important;
+}
+.borderblack-bottom{
+    border-bottom: 1px solid black !important;
 }
 .bg-white1{
     background-color: #eaeaea !important;
@@ -168,6 +174,7 @@ Home component
 .bg-pampa3{
     background-color: #8534a3 !important;
 }
+
 @media only screen and (max-width: 450px) {
     .spanColor {
       padding: 8px;
@@ -178,6 +185,25 @@ Home component
         -moz-transform: translate(20px ,20px);
         -ms-transform: translate(20px ,20px);
         -o-transform: translate(20px ,20px);
+}
+.text-app{
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+.theme{
+    display: none;
+}
+.Personalize{
+    padding-bottom: 15px;
+    margin: 15px 0;
+}
+.text-mobile{
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+.navbar-toggler:focus {
+    
+    box-shadow: none;
 }
   }
 

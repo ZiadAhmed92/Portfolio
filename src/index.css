@@ -6,7 +6,7 @@ body{
 /* Project */
 
 .project{
-    height: 600px !important;
+    height: 650px !important;
     background: white;
 }
 .img-project{
@@ -23,6 +23,7 @@ body{
     margin-left:5%;
     border: none;
     padding: 5px;
+    /* margin: 10px 5%; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;

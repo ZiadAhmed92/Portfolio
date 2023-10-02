@@ -6,7 +6,7 @@ import img4 from "../Image/fadl.png"
 const Projects = ({color}) => {
   return (
     <div className='py-3'>
-        <h1 className='text-center py-3'>Best Projects / Live Productions</h1>
+        <h1 className='text-mobile text-center py-3'>Best Projects / Live Productions</h1>
         <div className="container">
             <div className="row">
             
@@ -35,7 +35,7 @@ const Projects = ({color}) => {
                         <img src={img1} className='img-project w-100 '/>
                         <h6 className='fw-bold p-3  text-black'>CRUD</h6>
                     <p className='text-project p-3 text-muted'>The project is a system that allows the user to add, remove, and modify any products that I have used javascript and Html And css</p>
-                    <button className={`btn2  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Live Preview</button>
+                    <button className={`btn2   ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Live Preview</button>
 
                     </div>
                 </div>
