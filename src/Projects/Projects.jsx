@@ -43,7 +43,7 @@ const Projects = ({color}) => {
                     <div className='project'>
                         <img src={img4} className='img-project w-100 '/>
                         <h6 className='fw-bold p-3 text-black'>Material</h6>
-                    <p className='text-project p-3 text-muted'>A site that helps you find summaries and the practical part in all academic subjectsوIt is assigned to the Korean College of Technology, Department of Mechatronics</p>
+                    <p className='text-project p-3 text-muted'>A site that helps you find summaries and the practical part in all academic subjects , It is assigned to the Korean College of Technology, Department of Mechatronics</p>
                    <a target='_blank' href='http://app2-v7ma.vercel.app/'> <button className={`btn2  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Live Preview</button></a>
 
                     </div>
