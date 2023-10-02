@@ -32,7 +32,7 @@ const Projects = ({color}) => {
               
                 <div className="col-md-6 py-3">
                     <div className='project'>
-                        <img src={img1} className='img-project w-100 '/>
+                        <img src={img1} className='crud-img img-project w-100 '/>
                         <h6 className='fw-bold p-3  text-black'>CRUD</h6>
                     <p className='text-project p-3 text-muted'>The project is a system that allows the user to add, remove, and modify any products that I have used javascript and Html And css</p>
                   <a href='https://ziadahmed92.github.io/Crud/crud.html'>  <button className={`btn2   ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> Live Preview</button></a>

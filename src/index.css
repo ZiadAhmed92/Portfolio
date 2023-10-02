@@ -8,9 +8,22 @@ body{
 .project{
     height: 650px !important;
     background: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.crud-img{
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
 .img-project{
     height: 350px;
+    border-radius:10px 10px 0 0 !important ;
+    -webkit-border-radius:10px 10px 0 0 !important ;
+    -moz-border-radius:10px 10px 0 0 !important ;
+    -ms-border-radius:10px 10px 0 0 !important ;
+    -o-border-radius:10px 10px 0 0 !important ;
 }
 .btn1{
     border: none;

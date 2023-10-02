@@ -7,7 +7,18 @@ import Projects from './Projects/Projects'
 function App() {
  const[color ,setColor]= useState(["bg-black","bg-black1","bg-black2","bg-black3"])
 
+//  if(scrollTop>=500){
+//   $(".arrowUp").css("display","flex");
+//   }else{
+//       $(".arrowUp").css("display","none");
+//   }
+    
+//   $(".arrowUp").click(function(){
+//       $("body,html").animate({scrollTop:0},1000)
+//   })
 
+
+  
  
   return (
     
@@ -17,6 +28,10 @@ function App() {
     {/* Projects */}
     <Projects color={color}/>
     <Contact  color={color}/>
+    <div class="arrowUp position-fixed">
+   
+    <i class="fa-solid fa-arrow-up"></i>
+     </div>
     </div>
   )
 }
