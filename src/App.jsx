@@ -4,18 +4,20 @@ import Home from './Home.jsx/Home'
 import About from './About/About'
 import Contact from './Contact/Contact'
 import Projects from './Projects/Projects'
+// import $ from 'jquery'
 function App() {
  const[color ,setColor]= useState(["bg-black","bg-black1","bg-black2","bg-black3"])
 
-//  if(scrollTop>=500){
+//  if(screenTop>=500){
+//   console.log("tmam")
 //   $(".arrowUp").css("display","flex");
 //   }else{
 //       $(".arrowUp").css("display","none");
 //   }
     
-//   $(".arrowUp").click(function(){
-//       $("body,html").animate({scrollTop:0},1000)
-//   })
+  // $(".arrowUp").click(function(){
+  //     $("body,html").animate({scrollTop:0},1000)
+  // })
 
 
   
@@ -28,10 +30,10 @@ function App() {
     {/* Projects */}
     <Projects color={color}/>
     <Contact  color={color}/>
-    <div class="arrowUp position-fixed">
+    {/* <div className={` arrowUp position-fixed`}>
    
-    <i class="fa-solid fa-arrow-up"></i>
-     </div>
+    <i className=" fa-solid fa-arrow-up"></i>
+     </div> */}
     </div>
   )
 }

@@ -24,13 +24,13 @@ const Home = ({color ,setColor}) => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
         <li className="nav-item ">
-          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#">About</a>
+          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#about">About</a>
         </li>
         <li className="nav-item">
-          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#">Projects</a>
+          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#projects">Projects</a>
         </li>
         <li className="nav-item">
-          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#">Contact</a>
+          <a className={`nav-link ${color[0]==="bg-white1"?" text-dark": color[0]===undefined?" text-dark":" text-white"}  active `} aria-current="page" href="#contact">Contact</a>
         </li>
       </ul>
       </div>

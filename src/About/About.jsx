@@ -4,7 +4,7 @@ import Cv from '../Image/Ziad-Cv.pdf'
 import img from "../Image/mearn.png"
 const About = ({color}) => {
   return (
-    <div className={` container-fluid py-5 my-5 ${color[1]}`}>
+    <div id="about" className={` container-fluid py-5 my-5 ${color[1]}`}>
       <div className="row">
          <div className="col-md-6 ">
             <div className='about ps-3'>

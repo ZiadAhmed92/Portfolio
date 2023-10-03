@@ -5,7 +5,7 @@ import img3 from "../Image/games.png"
 import img4 from "../Image/fadl.png"
 const Projects = ({color}) => {
   return (
-    <div className='py-3'>
+    <div className='py-3' id='projects'>
         <h1 className='text-mobile text-center py-3'>Best Projects / Live Productions</h1>
         <div className="container">
             <div className="row">
