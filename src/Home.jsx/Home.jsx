@@ -8,7 +8,7 @@ const Home = ({color ,setColor}) => {
   
   }
   return (
-    <div>
+    <div id='home'>
         <h1 className='text-app text-center py-5'>I'm Ziad Ahmed</h1>
         <div className={`parent-home  ${color[0]==="bg-white1"?"bg-white2  borderblack":color[0]===undefined?" bg-white2 borderblack ":""+" borderwhite "}  `}>
         <nav className={`navbar  p-0 navbar-expand-lg ${color[0]==="bg-white1"?"bg-white2   borderblack-bottom":color[0]+" borderwhite-bottom "}   `}>

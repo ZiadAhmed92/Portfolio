@@ -7,7 +7,12 @@ import Projects from './Projects/Projects'
 // import $ from 'jquery'
 function App() {
  const[color ,setColor]= useState(["bg-black","bg-black1","bg-black2","bg-black3"])
+ const[scroll ,setScroll]= useState(0)
 
+ window.onscroll=function(){
+  setScroll(scrollY)
+ 
+ }
 //  if(screenTop>=500){
 //   console.log("tmam")
 //   $(".arrowUp").css("display","flex");
@@ -30,10 +35,10 @@ function App() {
     {/* Projects */}
     <Projects color={color}/>
     <Contact  color={color}/>
-    {/* <div className={` arrowUp position-fixed`}>
+  <a href='#home'>   <div className={` arrowUp position-fixed ${scroll>=500?" d-flex":"d-none"}`}>
    
-    <i className=" fa-solid fa-arrow-up"></i>
-     </div> */}
+   <i className=" fa-solid fa-arrow-up"></i>
+    </div></a>
     </div>
   )
 }

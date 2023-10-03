@@ -174,7 +174,7 @@ Home component
 .bg-pampa3{
     background-color: #8534a3 !important;
 }
-/* .arrowUp{
+.arrowUp{
     display: none;
     transition:1s ease;
     justify-content: center;
@@ -197,7 +197,7 @@ Home component
     -moz-transition:1s ease;
     -ms-transition:1s ease;
     -o-transition:1s ease;
-} */
+}
 @media only screen and (max-width: 450px) {
     .spanColor {
       padding: 8px;
@@ -228,14 +228,14 @@ Home component
     
     box-shadow: none;
 }
-/* .arrowUp{
+.arrowUp{
     
     width: 30px;
     height: 30px;
     bottom: 30px;
     right: 30px;
  
-} */
+}
 .fa-arrow-up{
     font-size: .5em;
 }
