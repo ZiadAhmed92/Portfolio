@@ -3,8 +3,9 @@ import React from 'react'
 const Home = ({color ,setColor}) => {
 
   function Colors(colors){
-    // localStorage.setItem("defaultColor" , colors)  
+    localStorage.setItem("defaultColor" , JSON.stringify(colors))  
     setColor(colors)
+    
   
   }
   return (
@@ -12,7 +13,7 @@ const Home = ({color ,setColor}) => {
         <h1 className='text-app text-center py-5'>I'm Ziad Ahmed</h1>
         <div className={`parent-home  ${color[0]==="bg-white1"?"bg-white2  borderblack":color[0]===undefined?" bg-white2 borderblack ":""+" borderwhite "}  `}>
         <nav className={`navbar  p-0 navbar-expand-lg ${color[0]==="bg-white1"?"bg-white2   borderblack-bottom":color[0]+" borderwhite-bottom "}   `}>
-  <div className={`container-fluid`}>
+  <div className={`container-fluid py-2`}>
        <div>
        <span className="spanColor bg-danger"></span>
         <span className="spanColor bg-warning"></span>
