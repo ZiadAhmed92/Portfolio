@@ -44,3 +44,31 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
+.btn3{
+    width: 30%;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    /* margin: 10px 5%; */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.p-btn3{
+    display: flex;
+    justify-content: space-around;
+}
+.project-me{
+   
+    animation: move 0.5s;
+    -webkit-animation: move 0.5s;
+  }
+@keyframes move {
+    0%  {scale:0 }
+    40%  {scale:1.01 }
+    50%  {scale:1.1 }
+    60%  {scale:1.2 }
+    100%  {scale:1 }
+  }

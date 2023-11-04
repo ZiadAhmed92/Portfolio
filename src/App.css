@@ -189,8 +189,8 @@ Home component
     border: 1px solid white;
     background-color: black;
     font-size: 2em;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     bottom: 50px;
     right: 50px;
     -webkit-border-radius: 50%;
@@ -205,6 +205,9 @@ Home component
 @media only screen and (max-width: 450px) {
     .spanColor {
       padding: 8px;
+    }
+    .home-me{
+        padding:30px 0 60px 0 !important;
     }
     .data-me{
         transform: translate(20px ,20px);
@@ -244,4 +247,17 @@ Home component
     font-size: .5em;
 }
 }
-  
+.btn-projects{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+  .github:hover{
+   background: #8a8888;
+   cursor: pointer;
+   border-radius: 20px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -ms-border-radius: 20px;
+   -o-border-radius: 20px;
+}

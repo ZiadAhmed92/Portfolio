@@ -1,5 +1,5 @@
 import React from 'react'
-
+import imgMe from '../Image/circle-ziad.png'
 const Home = ({color ,setColor}) => {
 
   function Colors(colors){
@@ -43,7 +43,10 @@ const Home = ({color ,setColor}) => {
 
         <div className={`container-fliud ${color[1]}`}>
             <div className="home-me row py-5">
-                <div className="Personalize col-md-6 text-center">
+                <div className="Personalize col-md-6  text-center">
+                <div>
+                <img src={imgMe} className="mb-3 w-25 h-25 " />
+                </div>
                     <h4>Personalize Theme</h4>
                     <span onClick={()=> Colors(["bg-black","bg-black1","bg-black2","bg-black3"])} className="spanColor1 bg-black"></span>
                     <span onClick={()=> Colors(["bg-white1","bg-white2","bg-white3","bg-white4"])} className="spanColor1 bg-white"></span>

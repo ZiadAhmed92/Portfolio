@@ -17,16 +17,7 @@ function App() {
   window.onscroll = function () {
     setScroll(scrollY);
   };
-  //  if(screenTop>=500){
-  //   console.log("tmam")
-  //   $(".arrowUp").css("display","flex");
-  //   }else{
-  //       $(".arrowUp").css("display","none");
-  //   }
-
-  // $(".arrowUp").click(function(){
-  //     $("body,html").animate({scrollTop:0},1000)
-  // })
+   
 
   return (
     <div
@@ -50,7 +41,8 @@ function App() {
             scroll >= 500 ? " d-flex" : "d-none"
           }`}
         >
-          <i className=" fa-solid fa-arrow-up"></i>
+          {/* <i className=" fa-solid fa-arrow-up"></i> */}
+          <i className="fs-5 fa-solid fa-angle-left fa-rotate-90"></i>
         </div>
       </a>
     </div>
