@@ -1,6 +1,20 @@
 import React from 'react'
 import imgMe from '../Image/circle-ziad.png'
+import moment from 'moment';
+import  { useState, useEffect } from 'react';
 const Home = ({color ,setColor}) => {
+  const [currentTime, setCurrentTime] = useState(moment().format('HH:mm:ss'));
+  const [currentDate, setCurrentDate] = useState(moment().format('YYYY-MM-DD'));
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(moment().format('HH:mm:ss'));
+      setCurrentDate(moment().format('YYYY-MM-DD'));
+    }, 1000);
+
+    // تنظيف المؤقت عندما يتم تفكيك المكون
+    return () => clearInterval(intervalId);
+  }, []);
 
   function Colors(colors){
     localStorage.setItem("defaultColor" , JSON.stringify(colors))  
@@ -11,6 +25,11 @@ const Home = ({color ,setColor}) => {
   return (
     <div id='home'>
         <h1 className='text-app text-center py-5'>I'm Ziad Ahmed</h1>
+    
+        <div>
+        <h6 className='Time fs-2 text-center '>{currentTime}</h6>
+        <h6 className='Data fs-2 text-center'> {currentDate}</h6>
+    </div>
         <div className={`parent-home  ${color[0]==="bg-white1"?"bg-white2  borderblack":color[0]===undefined?" bg-white2 borderblack ":""+" borderwhite "}  `}>
         <nav className={`navbar  p-0 navbar-expand-lg ${color[0]==="bg-white1"?"bg-white2   borderblack-bottom":color[0]+" borderwhite-bottom "}   `}>
   <div className={`container-fluid py-2`}>
