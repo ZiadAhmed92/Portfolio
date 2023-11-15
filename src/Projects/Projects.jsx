@@ -5,6 +5,8 @@ import img3 from "../Image/games.png";
 import img4 from "../Image/fadl.png";
 import img5 from "../Image/commerce.png";
 import img6 from "../Image/protofolio-main.png";
+import img7 from "../Image/dashboard.png";
+import img8 from "../Image/quran.png";
 const Projects = ({ color }) => {
   let projectAll = [
     {
@@ -22,6 +24,23 @@ const Projects = ({ color }) => {
       desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used React & Material Ui",
       url: "https://ecommerce-ziad.vercel.app/",
       github: "https://github.com/ZiadAhmed92/ecommerce",
+    }
+    ,{
+      img: img7,
+      category: "react",
+      name: "Dashboard",
+      desc: "A Dashboard that I created using the Matrial UI and ReactJS ",
+      url: "https://dashboard-delta-olive.vercel.app/",
+      github: "https://github.com/ZiadAhmed92/Dashboard",
+    },
+    ,
+    {
+      img: img8,
+      category: "react",
+      name: "Quran",
+      desc: " The Holy Qur’an website contains the complete Qur’an with the voices of all sheikhs and many languages",
+      url: "https://quran-two-sigma.vercel.app/",
+      github: "https://github.com/ZiadAhmed92/quran",
     },
     {
       img: img6,
@@ -46,7 +65,8 @@ const Projects = ({ color }) => {
       desc: "  The project is a system that allows the user to add, remove, and modify any products that I have used javascript and Html And css",
       url: "https://ziadahmed92.github.io/Crud/crud.html",
       github: "https://github.com/ZiadAhmed92/Crud",
-    },
+    }
+    ,
     {
       img: img4,
       category: "react",
@@ -55,6 +75,7 @@ const Projects = ({ color }) => {
       url: "http://app2-v7ma.vercel.app/",
       github: "https://github.com/ZiadAhmed92/app2",
     },
+  
   ];
   const [projects, setProjects] = useState(projectAll);
   function filterProject(cate) {
@@ -110,7 +131,7 @@ const Projects = ({ color }) => {
           {projects.map((item, i) => {
             return (
               <div className="col-md-6 project-me py-3" key={i}>
-                <div className="project">
+                <div className="project position-relative">
                   <img src={item.img} className="img-project w-100 " />
                   <div className="btn-projects">
                     <h6 className="fw-bold p-3 fs-5 text-black">{item.name}</h6>
@@ -128,7 +149,7 @@ const Projects = ({ color }) => {
                   <a target="_blank" href={item.url}>
                     {" "}
                     <button
-                      className={`btn2  ${
+                      className={`btn2 btn-project position-abs  ${
                         color[3] === "bg-white4"
                           ? color[3] + " text-white"
                           : color[3] + " text-white"

@@ -15,8 +15,8 @@ const About = ({color}) => {
               I mainly work on Web Development with React JS & TypeScript, with an interest in other programming languages ex: Java and more.<br/>
               If you want to know more about me and my work, please check my CV.<br/>
               </p>
-              <button className={`btn1  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> <a className="text-white" href={Cv}>View CV</a></button>
-              <button className={`btn1 ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]}`}> <a className="text-white" href='mailto:za693387@gmail.com'>Mail Me</a></button>
+              <a className="text-white" href={Cv}>                         <button className={`btn1  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> View CV</button></a>
+              <a className="text-white" href='mailto:za693387@gmail.com'>  <button className={`btn1 ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}>Mail Me</button></a>
               <hr className='hr'/>
               <h3 className='para my-3 fw-bold'>CORE PROFICIENCIES</h3>
               <div className={`p-3 d-flex ${color[2]===undefined?"bg-white3":color[2]}`}>

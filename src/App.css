@@ -252,6 +252,10 @@ Home component
     justify-content: space-between;
     align-items: center;
 }
+.position-abs {
+position: absolute;
+bottom: 50px;
+}
   .github:hover{
    background: #8a8888;
    cursor: pointer;
