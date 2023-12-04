@@ -7,6 +7,7 @@ import img5 from "../Image/commerce.png";
 import img6 from "../Image/protofolio-main.png";
 import img7 from "../Image/dashboard.png";
 import img8 from "../Image/quran.png";
+import img9 from "../Image/amazon.png";
 const Projects = ({ color }) => {
   let projectAll = [
     {
@@ -24,6 +25,14 @@ const Projects = ({ color }) => {
       desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used React & Material Ui",
       url: "https://ecommerce-ziad.vercel.app/",
       github: "https://github.com/ZiadAhmed92/ecommerce",
+    }
+    ,{
+      img: img9,
+      category: "react",
+      name: "Amazon It is being worked on",
+      desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used React & Material Ui",
+      url: "https://e-amazon-31lu.vercel.app/",
+      github: "https://github.com/ZiadAhmed92/E-amazon",
     }
     ,{
       img: img7,
