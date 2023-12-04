@@ -30,7 +30,7 @@ const Projects = ({ color }) => {
       img: img9,
       category: "react",
       name: "Amazon It is being worked on",
-      desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used React & Material Ui",
+      desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used Next Js & Redux ",
       url: "https://e-amazon-31lu.vercel.app/",
       github: "https://github.com/ZiadAhmed92/E-amazon",
     }
