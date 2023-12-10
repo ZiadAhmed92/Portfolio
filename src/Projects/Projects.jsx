@@ -8,6 +8,7 @@ import img6 from "../Image/protofolio-main.png";
 import img7 from "../Image/dashboard.png";
 import img8 from "../Image/quran.png";
 import img9 from "../Image/amazon.png";
+import img10 from "../Image/saraha.png";
 const Projects = ({ color }) => {
   let projectAll = [
     {
@@ -50,6 +51,15 @@ const Projects = ({ color }) => {
       desc: " The Holy Qur’an website contains the complete Qur’an with the voices of all sheikhs and many languages",
       url: "https://quran-two-sigma.vercel.app/",
       github: "https://github.com/ZiadAhmed92/quran",
+    },
+    ,
+    {
+      img: img10,
+      category: "next",
+      name: "Saraha",
+      desc: " Sarahah website: You can create an account and send the link to your friends and send you secret messages",
+      url: "https://sarahaa.vercel.app/",
+      github: "https://github.com/ZiadAhmed92/sarahaa",
     },
     {
       img: img6,
