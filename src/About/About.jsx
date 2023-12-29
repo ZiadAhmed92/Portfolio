@@ -12,14 +12,18 @@ const About = ({color}) => {
               <p className='para '>
               I'm Ziad Ahmed, Software JavaScript Developer.<br/>
               I'm a Software Developer who can help your company to achieve more success and achievements in the software industry by building, debugging, and even deploying web applications.<br/>
-              I mainly work on Web Development with React JS & TypeScript, with an interest in other programming languages ex: Java and more.<br/>
+              I mainly work on Web Development with React JS & Node JS, with an interest in other programming languages ex: Java and more.<br/>
               If you want to know more about me and my work, please check my CV.<br/>
               </p>
               <a className="text-white" href={Cv}>                         <button className={`btn1  ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}> View CV</button></a>
               <a className="text-white" href='mailto:za693387@gmail.com'>  <button className={`btn1 ${color[3]==="bg-white4"?color[3]+ " text-white":color[3]+" text-white"}`}>Mail Me</button></a>
               <hr className='hr'/>
               <h3 className='para my-3 fw-bold'>CORE PROFICIENCIES</h3>
+              <div>
+
+              <h6 className='text-center fs-4'>MERN STACK</h6>
               <div className={`p-3 d-flex ${color[2]===undefined?"bg-white3":color[2]}`}>
+                
                 <ul>
                   <li>HTML/CSS/Sass</li>
                   <li>CSS Animations & UI Design</li>
@@ -27,17 +31,21 @@ const About = ({color}) => {
                   <li>Responsive Design</li>
                   <li>JavaScript</li>
                   <li>OOP/JavaSript</li>
-                  
-                </ul>
-                <ul className='ms-4'>
                   <li>React.JS</li>
                   <li>Integrating APIs</li>
+                </ul>
+                <ul className='ms-4'>
+                  <li>Node JS</li>
+                  <li>Express JS</li>
+                  <li>MYSQL  </li>
+                  <li>MongooseDB</li>
                   <li>TypeScript</li>
                   <li>Material UI</li>
                   <li>Git / Github Version Control</li>
                   <li>Depolying Web Apps</li>
                   
                 </ul>
+              </div>
               </div>
             </div>
           </div> 

@@ -9,6 +9,7 @@ import img7 from "../Image/dashboard.png";
 import img8 from "../Image/quran.png";
 import img9 from "../Image/amazon.png";
 import img10 from "../Image/saraha.png";
+import img11 from "../Image/crudNode.png";
 const Projects = ({ color }) => {
   let projectAll = [
     {
@@ -30,7 +31,7 @@ const Projects = ({ color }) => {
     ,{
       img: img9,
       category: "react",
-      name: "Amazon It is being worked on",
+      name: "Amazon",
       desc: "An easy-to-use online store and all products are available in it, such as clothes, shoes, and electrical appliances, and programming languages are used Next Js & Redux ",
       url: "https://e-amazon-31lu.vercel.app/",
       github: "https://github.com/ZiadAhmed92/E-amazon",
@@ -73,7 +74,7 @@ const Projects = ({ color }) => {
       img: img3,
       category: "react",
       name: "Games",
-      desc: "  A games website that gives you a speed of use that you cannotfind on any other site, as it enables you to download the latestgames and try them with the lowest service.",
+      desc: "  A games website that gives you a speed of use that you can not find on any other site, as it enables you to download the latest games and try them with the lowest service.",
       url: "https://ziadahmed92.github.io/Games/",
       github: "https://github.com/ZiadAhmed92/Games",
     },
@@ -93,6 +94,15 @@ const Projects = ({ color }) => {
       desc: " A site that helps you find summaries and the practical part inall academic subjects , It is assigned to the Korean College ofTechnology, Department of Mechatronics",
       url: "http://app2-v7ma.vercel.app/",
       github: "https://github.com/ZiadAhmed92/app2",
+    },
+    ,
+    {
+      img: img11,
+      category: "node",
+      name: "CRUD",
+      desc: "The FullStack project is a system that allows the user to add, remove, and modify any products that I have used React Js and Node Js and Express Js and Database => Mongoose",
+      url: "http://crud-mongoose-ten.vercel.app",
+      github: "https://github.com/ZiadAhmed92/crudBackendMongoose",
     },
   
   ];
@@ -121,18 +131,7 @@ const Projects = ({ color }) => {
               >
                 All Projects
               </button>
-              <button
-                className={`btn3  ${
-                  color[3] === "bg-white4"
-                    ? color[3] + " text-white"
-                    : color[3] + " text-white"
-                }`}
-                onClick={() => {
-                  filterProject("js");
-                }}
-              >
-                JavaScript
-              </button>
+              
               <button
                 className={`btn3  ${
                   color[3] === "bg-white4"
@@ -145,11 +144,24 @@ const Projects = ({ color }) => {
               >
                 React
               </button>
+
+              <button
+                className={`btn3  ${
+                  color[3] === "bg-white4"
+                    ? color[3] + " text-white"
+                    : color[3] + " text-white"
+                }`}
+                onClick={() => {
+                  filterProject("node");
+                }}
+              >
+                NodeJs
+              </button>
             </div>
           </div>
           {projects.map((item, i) => {
             return (
-              <div className="col-md-6 project-me py-3" key={i}>
+              <div className="col-lg-4 col-md-6 project-me py-3" key={i}>
                 <div className="project position-relative">
                   <img src={item.img} className="img-project w-100 " />
                   <div className="btn-projects">
