@@ -69,7 +69,7 @@
            
         }
         .btn-contact {
-            width: 200px !important;
+            margin:0 0 10px 0
     
         }
         .flex-contact {
@@ -78,7 +78,7 @@
 
         .fromControl {
             margin: 10px 0 !important;
-            width: 100%;
+            width:95%;
 
         }
 
@@ -87,9 +87,7 @@
             text-align: center;
         }
 
-        .submit {
-            width: 60%;
-        }
+      
 
         .img-contact {
             display: none;
@@ -104,9 +102,4 @@
 
         }
 
-    }
-
-    .email {
-        width: 80%;
-        height: 80%;
-    }
+    } 

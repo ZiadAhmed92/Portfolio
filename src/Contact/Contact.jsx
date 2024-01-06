@@ -1,7 +1,7 @@
 import React from 'react'
 import Lottie from "lottie-react";
 import done from "../Image/done.json";
-import email from "../image/email.json";
+
 import { useForm, ValidationError } from "@formspree/react";
 import "./Contact.css";
 
