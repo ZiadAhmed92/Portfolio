@@ -1,5 +1,5 @@
 import React from 'react'
-import imgMe from '../Image/circle-ziad.png'
+import imgMe from '../Image/circle-ziad.jpg'
 import moment from 'moment';
 import  { useState, useEffect } from 'react';
 const Home = ({color ,setColor}) => {
@@ -64,7 +64,7 @@ const Home = ({color ,setColor}) => {
             <div className="home-me row py-5">
                 <div className="Personalize col-md-6  text-center">
                 <div>
-                <img src={imgMe} className="mb-3 w-25 h-25 " />
+                <img src={imgMe} className="mb-3 w-25 h-25 rounded-circle " />
                 </div>
                     <h4>Personalize Theme</h4>
                     <span onClick={()=> Colors(["bg-black","bg-black1","bg-black2","bg-black3"])} className="spanColor1 bg-black"></span>

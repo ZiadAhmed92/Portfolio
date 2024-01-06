@@ -28,7 +28,7 @@ const Projects = ({ color }) => {
       url: "https://ecommerce-ziad.vercel.app/",
       github: "https://github.com/ZiadAhmed92/ecommerce",
     }
-    ,{
+    , {
       img: img9,
       category: "react",
       name: "Amazon",
@@ -36,7 +36,7 @@ const Projects = ({ color }) => {
       url: "https://e-amazon-31lu.vercel.app/",
       github: "https://github.com/ZiadAhmed92/E-amazon",
     }
-    ,{
+    , {
       img: img7,
       category: "react",
       name: "Dashboard",
@@ -104,8 +104,9 @@ const Projects = ({ color }) => {
       url: "http://crud-mongoose-ten.vercel.app",
       github: "https://github.com/ZiadAhmed92/crudBackendMongoose",
     },
-  
+
   ];
+  
   const [projects, setProjects] = useState(projectAll);
   function filterProject(cate) {
     let newProject = projectAll.filter((item) => item.category === cate);
@@ -122,22 +123,20 @@ const Projects = ({ color }) => {
           <div className="col-md-12">
             <div className="p-btn3">
               <button
-                className={`btn3  ${
-                  color[3] === "bg-white4"
+                className={`btn3  ${color[3] === "bg-white4"
                     ? color[3] + " text-white"
                     : color[3] + " text-white"
-                }`}
+                  }`}
                 onClick={() => setProjects(projectAll)}
               >
                 All Projects
               </button>
-              
+
               <button
-                className={`btn3  ${
-                  color[3] === "bg-white4"
+                className={`btn3  ${color[3] === "bg-white4"
                     ? color[3] + " text-white"
                     : color[3] + " text-white"
-                }`}
+                  }`}
                 onClick={() => {
                   filterProject("react");
                 }}
@@ -146,11 +145,10 @@ const Projects = ({ color }) => {
               </button>
 
               <button
-                className={`btn3  ${
-                  color[3] === "bg-white4"
+                className={`btn3  ${color[3] === "bg-white4"
                     ? color[3] + " text-white"
                     : color[3] + " text-white"
-                }`}
+                  }`}
                 onClick={() => {
                   filterProject("node");
                 }}
@@ -180,11 +178,10 @@ const Projects = ({ color }) => {
                   <a target="_blank" href={item.url}>
                     {" "}
                     <button
-                      className={`btn2 btn-project position-abs  ${
-                        color[3] === "bg-white4"
+                      className={`btn2 btn-project position-abs  ${color[3] === "bg-white4"
                           ? color[3] + " text-white"
                           : color[3] + " text-white"
-                      }`}
+                        }`}
                     >
                       {" "}
                       Live Preview
