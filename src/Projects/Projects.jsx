@@ -10,6 +10,7 @@ import img8 from "../Image/quran.png";
 import img9 from "../Image/amazon.png";
 import img10 from "../Image/saraha.png";
 import img11 from "../Image/crudNode.png";
+import img12 from "../Image/blogs.png";
 const Projects = ({ color }) => {
   let projectAll = [
     {
@@ -103,6 +104,14 @@ const Projects = ({ color }) => {
       desc: "The FullStack project is a system that allows the user to add, remove, and modify any products that I have used React Js and Node Js and Express Js and Database => Mongoose",
       url: "http://crud-mongoose-ten.vercel.app",
       github: "https://github.com/ZiadAhmed92/crudBackendMongoose",
+    },
+    {
+      img: img12,
+      category: "node",
+      name: "Blogs",
+      desc: "The FullStack project is a system that allows the user to add, remove, and modify any post that I have used React Js and Node Js and Express Js and Database => Mongoose",
+      url: "https://blog-facebook.vercel.app/",
+      github: "https://github.com/ZiadAhmed92/blogBackEnd",
     },
 
   ];
