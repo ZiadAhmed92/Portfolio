@@ -57,9 +57,9 @@ const Projects = ({ color }) => {
     ,
     {
       img: img10,
-      category: "next",
+      category: "node",
       name: "Saraha",
-      desc: " Sarahah website: You can create an account and send the link to your friends and send you secret messages",
+      desc: " Saraha website: You can create an account and send the link to your friends and send you secret messages",
       url: "https://sarahaa.vercel.app/",
       github: "https://github.com/ZiadAhmed92/sarahaa",
     },
