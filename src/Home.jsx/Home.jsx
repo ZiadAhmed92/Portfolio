@@ -12,7 +12,7 @@ const Home = ({color ,setColor}) => {
       setCurrentDate(moment().format('YYYY-MM-DD'));
     }, 1000);
 
-    // تنظيف المؤقت عندما يتم تفكيك المكون
+
     return () => clearInterval(intervalId);
   }, []);
 

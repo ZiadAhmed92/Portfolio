@@ -11,8 +11,17 @@ import img9 from "../Image/amazon.png";
 import img10 from "../Image/saraha.png";
 import img11 from "../Image/crudNode.png";
 import img12 from "../Image/blogs.png";
+import img13 from "../Image/speech emotion.png";
 const Projects = ({ color }) => {
   let projectAll = [
+    {
+      img: img13,
+      category: "react",
+      name: "Graduation Project",
+      desc: "The project works on analyzing emotions through tone of voice , and I have used React And Node Js ",
+      url: "https://speech-emotion-recognition-git-main-ziadahmed92s-projects.vercel.app",
+      github: "https://github.com/ZiadAhmed92/Graduation-Project-UI-main",
+    },
     {
       img: img2,
       category: "react",
