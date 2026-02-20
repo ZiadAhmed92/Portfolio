@@ -71,7 +71,7 @@ const Contact = ({ color }) => {
         </form>
       </div>
       <p className='para-contact' >Linkedin :<span title='Copy Link' onClick={copyText}>https://www.linkedin.com/in/ziad-ahmed/</span></p>
-      <p className='para-contact'>Mobile/WhatsApp/Telegram :<span title='Copy Number' onClick={copyText}> +20155992401</span></p>
+      <p className='para-contact'>Mobile/WhatsApp/Telegram :<span title='Copy Number' onClick={copyText}> +201500082989</span></p>
       <p className='para-contact' >Email :<span title='Copy Gmail' onClick={copyText}>  za693387@gmail.com</span></p>
     </div>
   )
